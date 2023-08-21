@@ -29,8 +29,8 @@ function Array() {
 
     const arrindex = ["Chris","Vicky","Sara","Raj","chris"]
 
-    const index = arrindex.map(abc =>
-        <h2 key={abc}>{abc}</h2>
+    const index = arrindex.map((abc , index) =>
+        <h2 key={index}>{abc}</h2>
     )
 
   return (
