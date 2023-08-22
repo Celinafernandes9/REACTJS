@@ -22,7 +22,7 @@ function Array() {
 
     const arrlist = arr.map(list =>(
         <ArrayChild key={list.id} list={list}/> 
-        // key={details.id} to give unique value to array
+        // key={details.id} to give unique value to array. to pevent duplication of the value
     ))
 
     // index list rendering
