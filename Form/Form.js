@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+// import Form from "./Form.css";
+import form from '../Form/Form.css'
 
 class Form extends Component {
     constructor(props) {
@@ -8,7 +10,8 @@ class Form extends Component {
          name: "",
          email:"",
          number:"",
-         message :""
+         address :"",
+         graduation:""
       }
     }
 
@@ -30,17 +33,31 @@ class Form extends Component {
         })
     }
 
-    handelMessage=(event)=>{
+    handeladdress=(event)=>{
         this.setState({
-            message:event.target.value
+            address:event.target.value
         })
     }
     
+    handeloption=(event)=>{
+      this.setState({
+          graduation:event.target.value
+      })
+  }
+
+  handelSubmit=(event)=>{
+    alert(`USERNAME: ${this.state.name}\n EMAIL: ${this.state.email}\n PHONE NO: ${this.state.number}\n AADRESS: ${this.state.address}\n GRADUATION: ${this.state.graduation}`)
+    event.preventDefault();
+  }
+
   render() {
     return (
       <>
-        <div>
-          <form>
+        <div className="container">
+          <form onSubmit={this.handelSubmit}>
+
+            <h1 className="heading">REGISTRATION FORM</h1>
+
             <label>Name: </label>
             <input  type="text" placeholder="Enter your name" value={this.state.name} onChange={this.handelName}></input><br></br><br/>
 
@@ -51,16 +68,19 @@ class Form extends Component {
             <input  type="text" placeholder="Enter your number" maxLength="10" value={this.state.number} onChange={this.handelPhone}></input><br></br><br/>
 
             <label>Adress: </label>
-            <textarea type="text" value={this.state.message} onChange={this.handelMessage}/><br></br><br/>
+            <textarea type="text" value={this.state.address} onChange={this.handeladdress}/><br></br><br/>
 
             <label>Graduation: </label>
-            <select>
-                <option>BSC CS</option>
-                <option>BCOM</option>
-                <option></option>
-                <option>BSC CS</option>
-            </select>
-            <button type="button">Submit</button>
+            <select value={this.state.graduation} onChange={this.handeloption}>
+                <option value="BSC CS">BSC CS</option>
+                <option value="BCOM">BCOM</option>
+                <option value="MSC">MSC</option>
+                <option value="MCA">MCA</option>
+                <option value="B Tech">B Tech</option>
+                <option value="BBA">BBA</option>
+            </select><br></br><br/>
+
+            <button type="submit">Submit</button><br></br><br/>
           </form>
         </div>
       </>

@@ -1,0 +1,11 @@
+.container{
+    margin-top: 20px;
+    background-color: beige;
+    border-radius: 2px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.heading{
+    color: cornflowerblue;
+}
