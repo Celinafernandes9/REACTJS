@@ -18,6 +18,21 @@ class LifeCycleMethod2 extends Component {
       componentDidMount(){
           console.log('#LIFECYCLE2 componentDidMount');
       }
+
+      // updating method
+    shouldComponentUpdate(){
+      console.log("#LIFECYCLE2 shouldComponentUpdate");
+      return true
+    }
+
+    getSnapshotBeforeUpdate(){
+      console.log("#LIFECYCLE2 getSnapshotBeforeUpdate");
+      return null
+    }
+
+    componentDidUpdate(){
+      console.log("#LIFECYCLE2 componentDidUpdate");
+    }
   render() {
     console.log('#LIFECYCLE2 Render');
     return (
