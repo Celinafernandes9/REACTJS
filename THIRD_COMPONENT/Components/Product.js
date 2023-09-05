@@ -8,10 +8,10 @@ export const Product = () => {
   return (
     <>
       <div className="content mb-4 mt-3 m-5 fw-bold fs-2">Product</div>
-      <input type="search" placeholder="Search product" className="m-4 " />
+      <input type="search" placeholder="Search product" className="m-4" />
 
       <nav className="nav">
-        <Link to="/men" className="m-4 text-decoration-none text-black ">
+        <Link to="/men" className="m-4 text-decoration-none text-black">
           <img src={m1} alt=" " height={70} width={70} className="rounded-circle m-3" />
           Men
         </Link>
