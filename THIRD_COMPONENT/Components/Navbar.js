@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
-export const Navbar = (props) => {
+export const Navbar = () => {
  const NavLinkStyles = ({isActive})=>{
   return{
     fontweight : isActive ? 'bolder' : 'normal',
@@ -16,7 +16,7 @@ export const Navbar = (props) => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
-              {/* {props.title} */}Navbar
+              Navbar
             </Link>
 
             <button
@@ -41,7 +41,7 @@ export const Navbar = (props) => {
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" style={NavLinkStyles} to="/about">
-                    {/* {props.aboutText} */}About
+                    About
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -51,15 +51,6 @@ export const Navbar = (props) => {
                 </li>
               </ul>
              
-              {/* <div className="custom-control custom-switch">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="customSwitch1"/>
-                <label className="custom-control-label" htmlFor="customSwitch1">
-                  Enable dark mode
-                </label>
-              </div> */}
             </div>
           </div>
         </nav>
