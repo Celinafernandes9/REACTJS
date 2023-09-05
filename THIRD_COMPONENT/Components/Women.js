@@ -11,16 +11,16 @@ export const Women = () => {
     <div>Women</div>
     <div className="pro-container d-flex flex-wrap"></div>
     <div className="border border-dark m-3">
-    <img src={sw1} alt="" />
+    <img src={sw1} alt=" " />
   </div>
   <div className="border border-dark m-3">
-    <img src={sw2} alt="" />
+    <img src={sw2} alt=" " />
   </div>
   <div className="border border-dark m-3">
-    <img src={sw3} alt="" />
+    <img src={sw3} alt=" " />
   </div>
   <div className="border border-dark m-3">
-    <img src={sw4} alt="" />
+    <img src={sw4} alt=" " />
   </div>
   </div>
   </>
