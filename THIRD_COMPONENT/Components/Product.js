@@ -23,7 +23,7 @@ export const Product = () => {
       </nav>
 
       <section className="banner">
-        <img src={b1} alt="banner" height={200} className="w-100" />
+        <img src={b1} alt="banner" height={250} className="w-100" />
       </section>
     </>
   );
