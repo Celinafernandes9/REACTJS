@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
 
 import s1 from "../Image/s1.jpg";
@@ -11,8 +10,9 @@ import sw2 from "../Image/sw2.jpg";
 import sw3 from "../Image/sw3.jpg";
 import sw4 from "../Image/sw4.jpg";
 
+
 export const Collection = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <>
       <div className="container mt-4 text-center fw-bold fs-1">Collection</div>
@@ -43,6 +43,9 @@ export const Collection = () => {
         </div>
       </div>
       
+      <button type="button"
+        className="btn btn-danger text-danger pl-5 m-4 bg-transparent" onClick={()=>navigate('/order')}>Order</button>
+
       <button type="button"
         className="btn btn-danger text-danger pl-5 m-4 bg-transparent" onClick={()=>navigate("/")}>Go Back To Home Page</button>
    
