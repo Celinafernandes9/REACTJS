@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 function memo({text}) {
     console.log("Memo comp");
@@ -11,5 +11,5 @@ function memo({text}) {
     </>
   )
 }
-
+// to avoid rerendering we used memo Component
 export default React.memo(memo) 
