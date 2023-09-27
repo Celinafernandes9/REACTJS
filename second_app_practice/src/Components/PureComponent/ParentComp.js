@@ -26,6 +26,7 @@ class ParentComp extends Component {
       <div>
         Parent Component
       </div>
+      {/* In regular components we can update the props of child component using setstate() */}
       <RegComp name={this.state.name}/>
       <PureComp name={this.state.name}/>
 
